@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+/*Hachi Maru Pop*/
+
+:root {
+	--width-photo: 130px;
+}
+
+body {
+	display: flex;
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		flex-wrap: wrap;
+		flex-direction: row;
+		width: 100%;
+		height: 100%;
+	}
+
+	section.side_left {
+		max-width: 100% !important;
+		min-width: 100% !important;
+		width: 100%;
+		border-right: 0;
+	}
+
+	section.side_right {
+		position: relative;
+	}
+
+	footer.r {
+		display: flex !important;
+		position: absolute;
+	}
+
+	footer.l {
+		display: none !important;
+		background: red;
+	}
+}
+
+section.side_left {
+	width: 50%;
+	min-height: 650px;
+	overflow-x: hidden;
+	max-width: 450px;
+	min-width: 360px;
+	background-color: #3c40c6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-right: 2px solid #eee;
+	position: relative;
+}
+
+.image_profile {
+	width: var(--width-photo);
+	height: var(--width-photo);
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 4px solid white;
+	box-sizing: content-box;
+	cursor: pointer;
+}
+
+.image_profile img{
+	width: var(--width-photo);
+	position: absolute;
+	top: -20px;
+	transform: rotate(-30deg);
+}
+
+.name {
+	width: 100%;
+	background-color: #575fcf;
+	text-align: center;
+	padding: 5px 0;
+	margin: 20px 0;
+	font-family: 'Hachi Maru Pop', sans-serif;
+	color: #00d8d6;
+}
+
+.description {
+	width: 100%;
+	text-align: center;
+	background-color: #575fcf;
+	padding: 10px 20px;
+}
+
+.description a {
+	color: white;
+	transition: all .2s ease;
+}
+
+.description a:hover {
+	color: #0fbcf9;
+}
+
+.description p {
+	text-align: justify;
+	font-size: 18px;
+	text-indent: 10px;
+	line-height: 28px;
+	color: #f0f002;
+}
+
+footer {
+	width: 100%;
+	justify-content: center;
+	position: absolute;
+	bottom: 20px;
+}
+
+footer > *  {
+	margin: 0 10px;
+}
+
+footer > * > span {
+	cursor: pointer;
+	transition: all .2s ease;
+}
+
+footer > * > span:hover {
+	color: #4bcffa;
+}
+
+footer.l {
+	display: flex;
+}
+
+footer.r {
+	display: none;
+}
