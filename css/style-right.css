@@ -134,6 +134,7 @@ section.side_right {
   text-align: left;
   padding: 5px 10px;
   background-color: rgba(107, 160, 232, 0.5);
+  pointer-events: none;
 }
 
 .pr {
@@ -142,6 +143,7 @@ section.side_right {
   justify-content: space-between;
   padding: 0 5px;
   margin: 10px;
+  pointer-events: none;
 }
 
 .card .percents {
@@ -151,6 +153,7 @@ section.side_right {
   border-radius: 10px;
   width: 80%;
   background-color: rgba(75, 207, 250, 0.6);
+  pointer-events: none;
 }
 
 .card .percents > span {
@@ -158,14 +161,17 @@ section.side_right {
   border-radius: 10px;
   height: 100%;
   transition: all 0.3s linear;
+  pointer-events: none;
 }
 
 .value_percents {
   font-size: 18px;
   font-weight: 600;
+  pointer-events: none;
 }
 
 .value_percents::after {
   content: "%";
   color: #f53b57;
+  pointer-events: none;
 }

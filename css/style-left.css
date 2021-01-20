@@ -79,7 +79,7 @@ section.side_left {
 }
 
 .image_profile:hover {
-  transform: scale(2) translateY(-30px);
+  transform: scale(1.5) translateY(-30px);
 }
 
 .name {
