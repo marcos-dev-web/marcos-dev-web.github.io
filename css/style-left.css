@@ -55,6 +55,7 @@ section.side_left {
 }
 
 .image_profile {
+	transition: all .2s linear;
 	width: var(--width-photo);
 	height: var(--width-photo);
 	border-radius: 50%;
@@ -70,10 +71,15 @@ section.side_left {
 }
 
 .image_profile img{
+	transition: all .2s linear;
 	width: var(--width-photo);
 	position: absolute;
 	top: -20px;
 	transform: rotate(-30deg);
+}
+
+.image_profile:hover {
+	transform: scale(2) translateY(-30px);
 }
 
 .name {
