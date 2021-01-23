@@ -1,10 +1,10 @@
 const functions = {
   style: {
-    default: `
-      transform: scale(1.0);
-      background-color: rgba(217, 227, 247, 0.5);
-      color: white;
-    `,
+    //default: `
+    //  transform: scale(1.0);
+    //  background-color: rgba(217, 227, 247, 0.5);
+    //  color: white;
+    //`,
     release: `
       transform: scale(0.8);
       background-color: #4b4b4b;
@@ -59,7 +59,7 @@ const functions = {
     const all_cards = document.querySelectorAll(".card");
 
     all_cards.forEach((card) => {
-      card.addEventListener("mouseenter", (e) => {
+      card.addEventListener("mouseenter", () => {
         card.style.backgroundColor = "#2980b9";
         all_cards.forEach((card_2) => {
           if (card != card_2) {
@@ -67,21 +67,15 @@ const functions = {
           }
         });
       });
-      card.addEventListener("mouseout", (e) => {
+      card.addEventListener("mouseout", () => {
         card.style.backgroundColor = "rgba(217, 227, 247, 0.5)";
         all_cards.forEach((card_2) => {
-          if (card != card_2) {
-            functions.apply_style(card_2, functions.style.default);
-          }
+						card_2.style = ""
         });
       });
     });
   },
 };
 
-const init_scripts = () => {
-  functions.insertDataInCards();
-  functions.hoverCards();
-};
-
-init_scripts();
+functions.insertDataInCards();
+functions.hoverCards();
