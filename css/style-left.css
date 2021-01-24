@@ -35,7 +35,6 @@ body {
 
   footer.l {
     display: none !important;
-    background: red;
   }
 }
 
@@ -79,7 +78,7 @@ section.side_left {
 }
 
 .image_profile:hover {
-  transform: scale(1.5) translateY(-30px);
+  transform: scale(1.2);
 }
 
 .name {
