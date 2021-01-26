@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="developer,web,desenvolvedor-web,programer,programador,git,github,git-hub,front-end"
-    />
-    <meta name="author" content="Marcos Vinicius" />
+    <title>Marcos Dev front-end</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <meta property="og:title" content="Marcos Dev Web - Desenvolvedor web" />
-    <meta property="og:site_name" content="Marcos Dev Web" />
-    <meta property="og:url" content="https://marcos-dev-web.github.io" />
-    <meta property="og:image" content="./img/profile.jpg" />
-
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Marcos Dev Web - Desenvolvedor web" />
+    <!--primary tags-->
+    <meta name="author" content="Marcos Venicius" />
     <meta
       name="description"
-      content="Apresentação de um estudante de desenvolvimento web, em busca de uma oportunidade de emprego."
+      content="Apresentação de um estudante de Desenvolvimento Web na parte front-end, em busca de um emprego."
     />
+    <meta
+      name="keywords"
+      content="front-end,developer,student,web,Desenvolvedor"
+    />
+
+    <!--meta tags-->
+    <meta
+      property="og:title"
+      content="Marcos Dev front-end - Desenvolvedor web front-end"
+    />
+    <meta property="og:site_name" content="Marcos Dev front-end" />
+    <meta property="og:url" content="https://marcos-dev-web.netlify.app" />
+    <meta property="og:image" content="./img/profile.jpg" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://marcos-dev-web.github.io/" />
-    <meta property="og:title" content="Marcos Dev Web - Desenvolvedor web" />
     <meta
-      property="og:description"
-      content="Apresentação de um estudante de desenvolvimento web, em busca de uma oportunidade de emprego."
+      property="og:title"
+      content="Marcos Dev Web - Desenvolvedor web front-end"
     />
+    <meta property="og:site_name" content="Marcos Dev Front End" />
+    <meta property="og:url" content="https://marcos-dev-web.netlify.app" />
     <meta property="og:image" content="./img/profile.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://marcos-dev-web.github.io/" />
+    <meta
+      property="twitter:url"
+      content="https://marcos-dev-web.netlify.app/"
+    />
     <meta
       property="twitter:title"
       content="Marcos Dev Web - Desenvolvedor web"
@@ -43,163 +51,158 @@
       content="Apresentação de um estudante de desenvolvimento web, em busca de uma oportunidade de emprego."
     />
     <meta property="twitter:image" content="./img/profile.jpg" />
-
-    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style-left.css" />
-    <link rel="stylesheet" href="./css/style-right.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/form.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-    <title>Marcos Dev Web - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/scroll.css" />
+    <link rel="stylesheet" href="./css/photo.css" />
+    <link rel="stylesheet" href="./css/cards.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="left_sustent"></div>
-    <section class="side_left">
-      <div class="image_profile">
-        <img
-          src="./img/profile.jpg"
-          alt="Photo profile"
-          title="Marcos Vinicius"
-        />
-      </div>
-      <h3 class="name">Marcos Vinicius</h3>
-      <div class="description">
-        <p>
-          Estou estudando desenvolvimento web a mais ou menos 4 meses.
-          Atualmente estou fazendo o curso de desenvolvimento web da
-          <a rel="nofollow" target="_blank" href="https://cursos.dankicode.com"
-            >danki code</a
-          >, E estou em busca de uma vaga na área.
-        </p>
-      </div>
-      <footer class="l">
-        <div class="social">
-          <span
-            ><a
-              rel="external"
-              target="_blank"
+    <main class="__main__">
+      <header class="profile__img">
+        <div class="image_profile">
+          <img src="./img/profile.jpg" alt="Image profile" />
+        </div>
+        <!--.image_profile-->
+        <div class="name">
+          <h1>Marcos Venicius</h1>
+          <div class="social">
+            <a
               href="https://www.instagram.com/marcos.dev.web"
-              ><i class="fab fa-instagram"></i> Instagram</a
-            ></span
-          >
-        </div>
-        <div class="social">
-          <span
-            ><a
-              rel="external"
               target="_blank"
+              rel="follow"
+              class="link"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+            <a
               href="https://www.github.com/marcos-dev-web"
+              target="_blank"
+              rel="follow"
+              class="link"
               ><i class="fab fa-github"></i> GitHub</a
-            ></span
-          >
+            >
+          </div>
+          <!--.social-->
         </div>
-      </footer>
-    </section>
-    <section class="side_right">
-      <div class="informations">
-        <h1 class="title">Skill's</h1>
-        <div class="cards">
-          <div class="card">
-            <h3 class="name_card">CSS</h3>
-            <div class="pr">
-              <span class="percents_css percents"><span></span></span>
-              <span class="value_percents_css value_percents"></span>
+        <!--.name-->
+      </header>
+      <!--.profile__img-->
+
+      <section class="body">
+        <article class="me">
+          <div class="description__container">
+            <div class="description">
+              <p>
+                Estou estudando desenvolvimento web, mais especificamente
+                front-end. Atualmente estou fazendo o curso de desenvolvimento
+                web da
+                <a
+                  rel="nofollow"
+                  target="_blank"
+                  href="https://cursos.dankicode.com"
+                  class="link"
+                  >danki code</a
+                >, E estou em busca de uma vaga na área de DEV Front-End.
+              </p>
             </div>
           </div>
-          <div class="card">
-            <h3 class="name_card">HTML</h3>
-            <div class="pr">
-              <span class="percents_html percents"><span></span></span>
-              <span class="value_percents_html value_percents"></span>
+          <div class="description__container">
+            <div class="description">
+              <p>
+                Atualmente tenho estudado sobre HTML, CSS e JavaScript (puro), E
+                essas foram as tecnologias usadas para criar este site em que
+                você está! Meu conhecimento em ReacJS ou NextJS é muito pouco,
+                más sou uma pessoa que gosta de aprender.
+              </p>
             </div>
           </div>
-          <div class="card">
-            <h3 class="name_card">JavaScript</h3>
-            <div class="pr">
-              <span class="percents_js percents"><span></span></span>
-              <span class="value_percents_js value_percents"></span>
+          <div class="description__container">
+            <div class="description">
+              <p>
+                Ainda não tive experiência no mercado de trabalho, más estou
+                sempre testando minhas habilidades em pequenos projetos. Começei
+                a estudar e queria ter um conhecimento bom para poder tentar
+                ingressar na área, agora que vejo que já consigo desenvolver
+                aplicações web front-end com confiança, vi que era a hora de
+                procurar um emprego na área.
+              </p>
             </div>
           </div>
-          <div class="card">
-            <h3 class="name_card">English</h3>
-            <div class="pr">
-              <span class="percents_en percents"><span></span></span>
-              <span class="value_percents_en value_percents"></span>
+        </article>
+        <section class="form">
+          <h3>Deixe sua <span class="green">Menssagem</span>!</h3>
+          <form method="POST" netlify name="contact" class="form_box">
+            <div class="input_box">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="name"
+                placeholder="Nome"
+                title="Nome"
+                required
+                minlength="3"
+                spellcheck="false"
+                autocomplete="off"
+              />
             </div>
-          </div>
-        </div>
-      </div>
-      <section class="form">
-        <h1 class="title">Dexie sua menssagem</h1>
-        <form
-          method="post"
-          netlify
-          name="contact"
-          class="form_container"
-        >
-          <input
-            type="text"
-            name="name"
-            id="name"
-            text="Digite o seu nome"
-            class="input_box"
-            placeholder="Digite o seu nome"
-            spellcheck="false"
-            autocomplete="off"
-            minlength="3"
-            required
-          />
-          <input
-            type="email"
-            minlength="5"
-            name="email"
-            title="Digite o seu email"
-            id="email"
-            class="input_box"
-            placeholder="Digite o seu email"
-            spellcheck="false"
-            autocomplete="email"
-            required
-          />
-          <textarea
-            id="msg"
-            name="msg"
-            cols="30"
-            rows="10"
-            placeholder="Digite a sua menssagem.."
-            class="text_box"
-            spellcheck="false"
-          ></textarea>
-          <button type="submit" name="go" title="Enviar">Enviar</button>
-        </form>
+            <div class="input_box">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="email"
+                placeholder="Email"
+                title="Email"
+                required
+                minlength="3"
+                autocomplete="email"
+                spellcheck="false"
+              />
+            </div>
+            <div class="input_box">
+              <label for="message">Menssagem</label>
+              <textarea
+                name="message"
+                id="message"
+                class="message"
+                spellcheck="false"
+                title="Menssagem"
+                placeholder="Deixe sua menssagem..."
+                autocomplete="off"
+              ></textarea>
+            </div>
+            <button type="submit" name="go" class="start" title="Enviar">Enviar</button>
+          </form>
+        </section>
       </section>
-      <footer class="r">
+      <!--.body-->
+      <footer>
         <div class="social">
-          <span
-            ><a
-              rel="external"
-              target="_blank"
-              href="https://www.instagram.com/marcos.dev.web"
-              ><i class="fab fa-instagram"></i> Instagram</a
-            ></span
+          <a
+            href="https://www.instagram.com/marcos.dev.web"
+            target="_blank"
+            rel="follow"
+            class="link"
+            ><i class="fab fa-instagram"></i> Instagram</a
           >
-        </div>
-        <div class="social" tabindex="12">
-          <span
-            ><a
-              rel="external"
-              target="_blank"
-              href="https://www.github.com/marcos-dev-web"
-              ><i class="fab fa-github"></i> GitHub</a
-            ></span
+          <a
+            href="https://www.github.com/marcos-dev-web"
+            target="_blank"
+            rel="follow"
+            class="link"
+            ><i class="fab fa-github"></i> GitHub</a
           >
         </div>
       </footer>
-    </section>
-    <script src="./js/script.js"></script>
+    </main>
+    <!--.__main__-->
   </body>
 </html>

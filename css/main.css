@@ -1,33 +1,178 @@
-.left_sustent {
-  width: 50%;
-  min-height: 100vh;
-  background: transparent;
-  max-width: 450px;
-  min-width: 360px;
-  position: relative;
-  top: 0;
-  left: 0;
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --bg-dark: #2d3546;
+  --red: #ff4757;
+  --green: #2ed573;
+  --green2: #1dd1a1;
+  --green2-dark: #10ac84;
+  --green-light: #7bed9f;
+  --blue: #48dbfb;
+  --light-blue: #2e86de;
+  --purple: #5728a9;
+  --dark-blue: #2D356D;
 }
 
-.form {
-  min-height: 100vh;
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes show_opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Header*/
+header.profile__img,
+section.body {
+  transition: all .2s linear;
+  animation-name: show;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+header.profile__img {
   width: 100%;
-  background-color: #3c40c6;
+  background: var(--bg-dark);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  padding: 20px 40px;
+  border-bottom: 2px solid white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.title {
-  font-size: 25px;
-  text-align: left;
+header.profile__img .name h1 {
+  font-size: 19px;
+  font-weight: bold;
+  color: var(--green-light);
+  text-align: center;
+  font-family: 'Potta One', cursive;
+}
+
+header.profile__img .name .social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+header.profile__img .name .social a {
+  margin: 5px;
+}
+/*Finish Header*/
+
+section.body {
   width: 100%;
-  padding: 5px 10px;
-  background-color: #485460;
-  border-bottom: 2px solid white;
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding: 10px 20px;
+}
+
+.me {
+  border-bottom: 2px solid var(--light-blue);
+  margin-bottom: 30px;
+}
+
+.description__container {
+  background-color: var(--dark-blue);
+  margin: 30px 0;
+  opacity: 0;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  animation-name: show_opacity;
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.description__container::before {
+  content: "";
+  background: var(--green-light);
+  border: 2px solid var(--light-blue);
+  width: 5px;
+  height: 5px;
+  display: block;
+  border-radius: 50%;
+}
+
+.description__container:hover .description__container::before {
+  background-color: red;
+}
+
+.description__container .description {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  margin: 5px;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.description p {
+  text-indent: 10px;
+  color: white;
+}
+
+.description p::first-letter {
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+/*link styles*/
+a,i {
+  transition: all .2s linear;
+}
+
+a.link {
+  color: var(--blue);
+}
+
+a.link:hover {
+  color: var(--light-blue);
+  text-decoration: underline;
+}
+
+a.link:active {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+a.link:hover i.fa-instagram {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+a.link:hover i.fa-github {
+  text-decoration: underline;
+  color: #ff7f50;
 }

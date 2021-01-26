@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
+:root {
+  --background-black: #222f3e;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,12 +19,26 @@
 html,
 body {
   height: 100%;
-  background-color: #2d3436;
+  background-color: var(--background-black);
   color: white;
   scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.__main__ {
+  max-width: 1200px;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-black);
+  position: relative;
 }

@@ -1,126 +1,117 @@
-.form_container {
-  background: #4b4b4b;
+
+section.form {
+  width: 100%;
+  background: rgba(0,0,0,.4);
   display: flex;
   flex-direction: column;
-  width: 70%;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: #7efff588 0px 7px 29px 0px;
-  transition: all .2s linear;
+  align-items: center;
 }
 
-.form_container > .input_box {
-  width: 80%;
-  margin: 20px auto;
-  background-color: transparent;
-  border: none;
-  border: 1px solid white;
-  border-radius: 18px;
-  height: 40px;
-  outline: none;
-  color: white;
-  padding: 5px 10px 0px 10px;
-  font-size: 20px;
-  transition: all .2s linear;
+section.form h3 {
+  font-size: 28px;
+  text-align: center;
+  background-color: var(--bg-dark);
+  width: 100%;
+  padding: 5px 0;
+  margin-bottom: 20px;
 }
 
-.form_container > .input_box:focus,
-.form_container > .input_box:hover:focus,
-.form_container > .input_box:active {
-  background: #3d3d3d;
-  border-color: #18dcff;
+section.form h3 span.green {
+  color: var(--green);
 }
 
-.form_container > .input_box:valid {
-  background: #3d4d3d;
-  border-color: #32ff7e;
-}
-
-.form_container > .input_box:hover:valid {
-  background: #3d4d3d;
-  border-color: #32ff7e;
-}
-
-.form_container > .input_box:hover {
-  background: #344350;
-}
-
-.text_box {
-  width: 90%;
+.form_box {
+  width: 95%;
   max-width: 500px;
-  height: 50%;
-  max-height: 450px;
-  margin: 10px auto;
+  background: #341f97;
   border-radius: 5px;
-  border: 1px solid #bdc3c7;
-  background: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 5px;
+}
+
+.form_box .input_box {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px auto;
+}
+
+.form_box .input_box label {
+  font-weight: bold;
   color: white;
-  padding: 5px 10px 0px 10px;
+  background-color: var(--dark-blue);
+  width: 100%;
+  padding: 5px;
+  cursor: text;
+}
+
+.form_box .input_box input, .input_box textarea {
+  width: 100%;
+  border: none;
   outline: none;
-  font-size: 20px;
+  font-size: 18px;
+  background-color: var(--bg-dark);
+  padding: 5px;
+  color: white;
+  transition: all .2s linear;
+}
+
+.input_box textarea {
   resize: none;
+  height: 100px;
   overflow-wrap: initial;
 }
 
-.text_box::-webkit-scrollbar,
-.text_box::-webkit-scrollbar-corner {
-  width: 8px;
-  height: 8px;
-  background-color: #34495e;
+.input_box textarea:focus {
+  border: 1px solid var(--light-blue);
+  border-top: none;
 }
 
-.text_box::-webkit-scrollbar-thumb {
-  background-color: #7f8c8d;
-  border-radius: 5px;
+.form_box .input_box input:focus {
+  border: 1px solid var(--light-blue);
+  border-top: none;
 }
 
-.text_box::-webkit-scrollbar-thumb:hover {
-  background: #4f8c8d !important;
+.form_box .input_box input:valid {
+  border: 1px solid var(--green);
+  border-top: none;
 }
 
-button[name="go"] {
+.form_box .input_box input:focus:invalid {
+  border: 1px solid var(--red);
+  border-top: none;
+}
+
+.start {
   width: 90%;
-  max-width: 500px;
-  font-size: 23px;
-  border-radius: 10px;
   border: none;
-  color: white;
-  font-weight: bolder;
-  background-color: #16a085;
-  margin: 0 auto;
   cursor: pointer;
-  padding: 10px 0;
-  box-sizing: border-box;
-  margin-top: 20px;
-  transition: all .2s ease;
+  background-color: var(--green2);
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 25px;
+  transition: all .2s ease-in-out;
 }
 
-button[name="go"]:active,
-button[name="go"]:focus,
-button[name="go"]:hover {
-  background: #1abc9c;
+.start:hover {
+  background-color: var(--green2-dark);
 }
 
-@media screen and (max-width: 460px) {
-  .form_container {
-    width: 90%;
-  }
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 
-@media screen and (max-width: 360px) {
-  .form {
-    min-height: calc(100vh - 40px) !important;
-  }
-
-  .form_container {
-    justify-content: center;
-  }
-
-  .form_container .input_box {
-    margin: 10px auto;
-  }
-
-  .form_container .text_box {
-    height: 40%;
-  }
+footer a.link {
+  margin: 0 20px;
 }
