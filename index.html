@@ -47,6 +47,8 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style-left.css" />
     <link rel="stylesheet" href="./css/style-right.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/form.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -54,6 +56,7 @@
     <title>Marcos Dev Web - Desenvolvedor Web</title>
   </head>
   <body>
+    <div class="left_sustent"></div>
     <section class="side_left">
       <div class="image_profile">
         <img
@@ -97,7 +100,7 @@
     </section>
     <section class="side_right">
       <div class="informations">
-        <h1>Skill's</h1>
+        <h1 class="title">Skill's</h1>
         <div class="cards">
           <div class="card">
             <h3 class="name_card">CSS</h3>
@@ -129,6 +132,48 @@
           </div>
         </div>
       </div>
+      <section class="form">
+        <h1 class="title">Dexie sua menssagem</h1>
+        <form
+          method="post"
+          netlify
+          name="contact"
+          class="form_container"
+        >
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="input_box"
+            placeholder="Digite o seu nome"
+            spellcheck="false"
+            autocomplete="off"
+            minlength="3"
+            required
+          />
+          <input
+            type="email"
+            minlength="5"
+            name="emali"
+            id="email"
+            class="input_box"
+            placeholder="Digite o seu email"
+            spellcheck="false"
+            autocomplete="email"
+            required
+          />
+          <textarea
+            id="msg"
+            name="msg"
+            cols="30"
+            rows="10"
+            placeholder="Digite a sua menssagem.."
+            class="text_box"
+            spellcheck="false"
+          ></textarea>
+          <button type="submit" name="go">Enviar</button>
+        </form>
+      </section>
       <footer class="r">
         <div class="social">
           <span

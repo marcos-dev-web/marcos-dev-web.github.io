@@ -1,0 +1,33 @@
+.left_sustent {
+  width: 50%;
+  min-height: 100vh;
+  background: transparent;
+  max-width: 450px;
+  min-width: 360px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.form {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #3c40c6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title {
+  font-size: 25px;
+  text-align: left;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #485460;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
