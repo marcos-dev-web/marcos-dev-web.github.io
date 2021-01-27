@@ -80,6 +80,12 @@ header.profile__img .name .social {
 header.profile__img .name .social a {
   margin: 5px;
 }
+
+@media screen and (max-width: 390px) {
+  header.profile__img {
+    padding: 15px;
+  }
+}
 /*Finish Header*/
 
 section.body {
@@ -87,7 +93,7 @@ section.body {
   padding: 10px 20px;
 }
 
-.me {
+.cards {
   border-bottom: 2px solid var(--light-blue);
   margin-bottom: 30px;
 }
@@ -100,12 +106,17 @@ section.body {
   padding: 10px;
   border-radius: 8px;
   border-top-left-radius: 0;
+  transition: all .2s linear;
   box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   animation-name: show_opacity;
   animation-duration: 1s;
   animation-delay: 2.2s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
+}
+
+article.me {
+  width: 100%;
 }
 
 @keyframes jump {
@@ -162,11 +173,11 @@ a,i {
 }
 
 a.link {
-  color: var(--blue);
+  color: #0be881;
 }
 
 a.link:hover {
-  color: var(--light-blue);
+  color: #00d8d6;
 }
 
 a.link:active {

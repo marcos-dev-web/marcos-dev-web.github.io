@@ -58,7 +58,6 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/scroll.css" />
     <link rel="stylesheet" href="./css/photo.css" />
-    <link rel="stylesheet" href="./css/cards.css" />
     <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -71,70 +70,55 @@
         <!--.image_profile-->
         <div class="name">
           <h1>Marcos Venicius</h1>
-          <div class="social">
-            <a
-              href="https://www.instagram.com/marcos.dev.web"
-              target="_blank"
-              rel="follow"
-              class="link"
-              ><i class="fab fa-instagram"></i> Instagram</a
-            >
-            <a
-              href="https://www.github.com/marcos-dev-web"
-              target="_blank"
-              rel="follow"
-              class="link"
-              ><i class="fab fa-github"></i> GitHub</a
-            >
-          </div>
-          <!--.social-->
         </div>
         <!--.name-->
       </header>
       <!--.profile__img-->
 
       <section class="body">
-        <article class="me">
-          <div class="description__container">
-            <div class="description">
-              <p>
-                Estou estudando desenvolvimento web, mais especificamente
-                front-end. Atualmente estou fazendo o curso de desenvolvimento
-                web da
-                <a
-                  rel="nofollow"
-                  target="_blank"
-                  href="https://cursos.dankicode.com"
-                  class="link"
-                  >danki code</a
-                >, E estou em busca de uma vaga na área de DEV Front-End.
-              </p>
+        <div class="cards">
+          <article class="me">
+            <div class="description__container">
+              <div class="description">
+                <p>
+                  Estou estudando desenvolvimento web, mais especificamente
+                  front-end. Atualmente estou fazendo o curso de desenvolvimento
+                  web da
+                  <a
+                    rel="nofollow"
+                    target="_blank"
+                    href="https://cursos.dankicode.com"
+                    class="link"
+                    >danki code</a
+                  >, E estou em busca de uma vaga na área de DEV Front-End.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="description__container">
-            <div class="description">
-              <p>
-                Atualmente tenho estudado sobre HTML, CSS e JavaScript (puro), E
-                essas foram as tecnologias usadas para criar este site em que
-                você está! Meu conhecimento em ReacJS ou NextJS é muito pouco,
-                más sou uma pessoa que gosta de aprender.
-              </p>
+            <div class="description__container">
+              <div class="description">
+                <p>
+                  Atualmente tenho estudado sobre HTML, CSS e JavaScript (puro), E
+                  essas foram as tecnologias usadas para criar este site em que
+                  você está! Meu conhecimento em ReacJS ou NextJS é muito pouco,
+                  más sou uma pessoa que gosta de aprender.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="description__container">
-            <div class="description">
-              <p>
-                Ainda não tive experiência no mercado de trabalho, más estou
-                sempre testando minhas habilidades em pequenos projetos. Começei
-                a estudar e queria ter um conhecimento bom para poder tentar
-                ingressar na área, agora que vejo que já consigo desenvolver
-                aplicações web front-end com confiança, vi que era a hora de
-                procurar um emprego na área.
-              </p>
+            <div class="description__container">
+              <div class="description">
+                <p>
+                  Ainda não tive experiência no mercado de trabalho, más estou
+                  sempre testando minhas habilidades em pequenos projetos. Começei
+                  a estudar e queria ter um conhecimento bom para poder tentar
+                  ingressar na área, agora que vejo que já consigo desenvolver
+                  aplicações web front-end com confiança, vi que era a hora de
+                  procurar um emprego na área.
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
-        <section class="form">
+          </article>
+        </div>
+        <section class="form" id="form">
           <h3>Deixe sua <span class="green">Menssagem</span>!</h3>
           <form method="POST" netlify name="contact" class="form_box">
             <div class="input_box">
@@ -179,7 +163,7 @@
                 autocomplete="off"
               ></textarea>
             </div>
-            <button type="submit" name="go" class="start" title="Enviar">Enviar</button>
+            <button type="submit" name="go" class="start" id="start" title="Enviar">Enviar</button>
           </form>
         </section>
       </section>
@@ -204,5 +188,6 @@
       </footer>
     </main>
     <!--.__main__-->
+    <script src="./js/script.js"></script>
   </body>
 </html>
