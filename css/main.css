@@ -108,6 +108,15 @@ section.body {
   animation-timing-function: linear;
 }
 
+@keyframes jump {
+  from {
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
 .description__container::before {
   content: "";
   background: var(--green-light);
@@ -116,6 +125,11 @@ section.body {
   height: 5px;
   display: block;
   border-radius: 50%;
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
 }
 
 .description__container:hover .description__container::before {
@@ -142,12 +156,6 @@ section.body {
   font-weight: bold;
 }
 
-
-
-
-
-
-
 /*link styles*/
 a,i {
   transition: all .2s linear;
@@ -159,20 +167,16 @@ a.link {
 
 a.link:hover {
   color: var(--light-blue);
-  text-decoration: underline;
 }
 
 a.link:active {
   color: var(--red);
-  text-decoration: underline;
 }
 
 a.link:hover i.fa-instagram {
   color: var(--red);
-  text-decoration: underline;
 }
 
 a.link:hover i.fa-github {
-  text-decoration: underline;
   color: #ff7f50;
 }
