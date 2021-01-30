@@ -28,16 +28,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  -webkit-filter: blur(10px);
   transition: all .2s linear;
 }
 
-@page :left {
-  bleed: 10pt;
-}
-@page :top {
-  bleed: 10pt;
-}
 a {
   text-decoration: none;
   color: inherit;

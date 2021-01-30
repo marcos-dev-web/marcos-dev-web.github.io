@@ -36,10 +36,6 @@ form.addEventListener('submit', (e) => {
   }
 })
 
-setTimeout(() => {
-  q('body').style = '-webkit-filter: blur(0);';
-}, 3000)
-
 const message = (msg) => {
   let span = document.createElement('span');
   span.style = `
@@ -95,7 +91,7 @@ const fullScreenForm = () => {
   window.scroll(0,0);
 
   setTimeout(() => {
-    message(`scroll page to exit full screen`)
+    message(`scroll page / click outside the box, to exit full screen `)
     window.onscroll = (e) => {
       if (fullScreen) {
         closeFullScreen()
