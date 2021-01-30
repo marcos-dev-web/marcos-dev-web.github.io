@@ -1,10 +1,11 @@
-
 section.form {
   width: 100%;
   background: rgba(0,0,0,.4);
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  transition: all .2s linear;
 }
 
 section.form h3 {
@@ -53,7 +54,8 @@ section.form h3 span.green {
 
 .form_box .input_box input, .input_box textarea {
   width: 100%;
-  border: none;
+  border: 0;
+  border-radius: 0;
   outline: none;
   font-size: 18px;
   background-color: #182C61;
@@ -62,6 +64,9 @@ section.form h3 span.green {
   transition: all .2s linear;
   border: 1px solid #cee;
   border-top: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .input_box textarea {
@@ -118,4 +123,10 @@ footer {
 
 footer a.link {
   margin: 0 20px;
+}
+
+@media screen and (max-width: 380px) {
+  section.body {
+    padding: 0 !important;
+  }
 }
