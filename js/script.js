@@ -34,7 +34,6 @@ form.addEventListener('submit', (e) => {
     alert('email is invalid');
     return;
   }
-  e.preventDefault()
 })
 
 setTimeout(() => {
