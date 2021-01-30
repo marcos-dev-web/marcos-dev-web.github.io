@@ -46,7 +46,7 @@ const message = (msg) => {
     width: 100%;
     padding: 10px 0;
     z-index: 999;
-    background: #00d2d399;
+    background: #00d2d3;
     color: white;
     font-family: sans-serif;
     text-align: center;
@@ -59,14 +59,16 @@ const message = (msg) => {
   }, 2500)
 }
 
-const closeFullScreen = (e={}) => {
-  if (e.target.getAttribute('id') == 'form') {
-    form_section.style = "";
-    form_section.style.opacity = '1'
-    header.style.display = "";
-    q('body').style.position = 'static';
-    footer.style = ""
-    form_section.onclick = ""
+const closeFullScreen = (e=null) => {
+  if (e != null) {
+    if (e.target.getAttribute('id') == 'form') {
+      form_section.style = "";
+      form_section.style.opacity = '1'
+      header.style.display = "";
+      q('body').style.position = 'static';
+      footer.style = ""
+      form_section.onclick = ""
+    }
   }
 }
 
