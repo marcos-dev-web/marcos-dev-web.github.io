@@ -5,7 +5,7 @@ section.form {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  transition: all .2s linear;
+  transition: all .2s ease;
 }
 
 section.form h3 {
@@ -61,7 +61,7 @@ section.form h3 span.green {
   background-color: #182C61;
   padding: 5px;
   color: white;
-  transition: all .2s linear;
+  transition: all .2s ease;
   border: 1px solid #cee;
   border-top: none;
   -webkit-appearance: none;
@@ -92,7 +92,7 @@ section.form h3 span.green {
 
 .form_box .input_box input:focus:invalid {
   border: 1px solid var(--red);
-  border-top: none;
+  
 }
 
 .start {

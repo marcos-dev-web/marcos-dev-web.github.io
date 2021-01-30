@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all .2s linear;
+  transition: all .1s ease;
 }
 
 a {
