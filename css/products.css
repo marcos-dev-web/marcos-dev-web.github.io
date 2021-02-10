@@ -1,0 +1,41 @@
+section.business {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #222f3e;
+  padding: 0 20px;
+}
+
+.header_business {
+  width: 100%;
+  background-color: #2d3546;
+  padding: 10px;
+}
+
+.title_header_business {
+  font-size: 30px;
+}
+
+.all_products {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #343c4d;
+  border: 1px solid #3a445a;
+  border-top: 0;
+}
+
+.product {
+  width: 120px;
+  height: 240px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  section.business {
+    padding: 0;
+  }
+  .all_products {
+    width: 100%;
+  }
+}

@@ -92,7 +92,7 @@ section.form h3 span.green {
 
 .form_box .input_box input:focus:invalid {
   border: 1px solid var(--red);
-  
+  border-top: none;
 }
 
 .start {
@@ -125,8 +125,24 @@ footer a.link {
   margin: 0 20px;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   section.body {
     padding: 0 !important;
+  }
+  .form {
+    width: 100%;
+    background: transparent;
+    margin: 30px 0;
+  }
+  .form_box {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .form h3 {
+    font-size: 20px !important;
   }
 }

@@ -1,5 +1,5 @@
 :root {
-  --width-photo: 100px;
+  --width-photo: 60px;
 }
 
 .image_profile {
@@ -21,7 +21,8 @@
   transition: all 0.2s linear;
   width: var(--width-photo);
   position: absolute;
-  top: -20px;
+  top: -19px;
+  left: -5px;
   transform: rotate(-30deg);
 }
 
