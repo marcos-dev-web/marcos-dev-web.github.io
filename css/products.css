@@ -1,18 +1,19 @@
 section.business {
   width: 100%;
   max-width: 1200px;
-  background-color: #222f3e;
+  background-color: #141936;
   padding: 0 20px;
 }
 
 .header_business {
   width: 100%;
-  background-color: #2d3546;
+  background-color: #4556B5;
   padding: 10px;
 }
 
 .title_header_business {
   font-size: 30px;
+  color: #ffeb3b;
 }
 
 .all_products {
@@ -20,7 +21,7 @@ section.business {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #343c4d;
+  background-color: #1d223cfc;
   border: 1px solid #3a445a;
   border-top: 0;
 }

@@ -19,7 +19,7 @@
 html,
 body {
   height: 100%;
-  background-color: var(--background-black);
+  background-color: #141936;
   color: white;
   scroll-behavior: smooth;
 }
@@ -40,6 +40,6 @@ a {
   max-width: 1200px;
   height: 100%;
   width: 100%;
-  background-color: var(--background-black);
+  background-color: #141936;
   position: relative;
 }
