@@ -29,3 +29,7 @@
 .image_profile:hover {
   transform: scale(1.15);
 }
+
+.profile__img {
+  transition: all 150ms linear;
+}
