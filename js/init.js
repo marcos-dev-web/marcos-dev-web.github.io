@@ -1,8 +1,5 @@
 
 function removeAlert() {
-	const data = JSON.stringify({
-		show: false,
-	}); localStorage.setItem("alert-key", data);
 	const container = document.getElementById('alert_depreceated');
 	container.remove();
 }
@@ -51,19 +48,4 @@ function showAlert() {
 	return true;
 }
 
-function verifyStateAlert() {
-	const key = localStorage.getItem('alert-key');
-
-	if (key !== null) {
-		const value = JSON.parse(key);
-		console.log(value)
-
-		if (value.show) {
-			showAlert();
-		}
-	} else {
-		showAlert();
-	}
-}
-
-verifyStateAlert();
+showAlert();
